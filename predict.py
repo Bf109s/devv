@@ -189,6 +189,24 @@ if __name__ == "__main__":
             st.title(':baby_chick:防鸟装置介绍\n你好 :sunglasses:') 
             Options = ["防鸟刺","防鸟挡板","防鸟盒","防鸟针板","防鸟罩","防鸟护套","防鸟拉线","人造鸟巢","人造栖鸟架","惊鸟装置","驱鸟装置"]
             choose = st.selectbox("在这里选择您想要了解的防鸟装置", Options)
+           st.markdown(
+        """
+        ### Summary
+        *Rascore* is a tool for analyzing structures of the RAS protein family
+        (KRAS, NRAS, and HRAS). The *Rascore* 
+        database presents a continually updated analysis of all available
+        RAS structures in the Protein Data Bank (PDB) with their catalytic switch 1 (SW1) 
+        and switch 2 (SW2) loops conformationally classified and their molecular 
+        contents annotated (e.g., mutation status, nucleotide state, 
+        bound protein, inhibitor site). 
+        Details of our work are 
+        provided in the [*Cancer Research*](https://aacrjournals.org/cancerres/article/doi/10.1158/0008-5472.CAN-22-0804/696349/Delineating-The-RAS-Conformational-LandscapeThe)
+        paper, **Delineating The RAS Conformational Landscape**.
+        We hope that researchers will use 
+        *Rascore* to gain novel insights into RAS biology and 
+        drug discovery. 
+        """
+    )
             st.spinner(text='资源加载中...')
             if choose == "防鸟刺":
                 st.info('防鸟刺是由多根长刺组成的制品，各长刺在底部集中固定，另一端向上均匀散开，安装于线路绝缘子串上方，以防止大型鸟类在绝缘子串上方栖息和泄粪，如图所示。防鸟刺包括防鸟刺本体和连接金具。防鸟刺分为防鸟直刺(FNCZ)、防鸟弹簧刺(FNCT)和防鸟异型刺(FNCY)三类，如图所示。连接金具按照连接形式可分为 U 型和 L 型，按照功能可分为倾倒型(Q)和非倾125倒型(FQ)，如图所示。') 
